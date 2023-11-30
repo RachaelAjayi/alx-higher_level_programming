@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-for tens in range(10):
-    for ones in range(tens + 1, 10):
-        print("{:d}{:d}".format(tens, ones), end=", " if tens < 9 or ones < 9 else "\n")
-
+for x in range(100):
+    if int(x / 10) != x % 10 and int(x / 10) < x % 10:
+        print("{}{}".format(int(x / 10), x % 10), end="")
+        if (x != 89):
+            print(", ", end="")
+print("")
